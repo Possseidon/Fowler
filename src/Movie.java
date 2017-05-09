@@ -1,24 +1,27 @@
 public class Movie {
 	
-    public static final int CHILDRENS = 2;
-    public static final int REGULAR = 0;
-    public static final int NEW_RELEASE = 1;
-    
+	enum PriceType
+	{
+		REGULAR,
+		NEW_RELEASE,
+		CHILDRENS
+    }
+	
     private String title;
-    private int priceCode;
+    private PriceType priceCode;
     
-    public Movie(String newTitle, int newpriceCode) 
+    public Movie(String newTitle, PriceType newPriceCode) 
     {
         title = newTitle;
-        priceCode = newpriceCode;
+        priceCode = newPriceCode;
     }
     
-    public int getPriceCode() 
+    public PriceType getPriceCode() 
     {
         return priceCode;
     }
     
-    public void setPriceCode(int arg) 
+    public void setPriceCode(PriceType arg) 
     {
         priceCode = arg;
     }
