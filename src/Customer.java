@@ -27,7 +27,7 @@ class Customer
         
         Enumeration<Rental> enum_rentals = rentals.elements();	    
         String result = "Rental Record for " + this.getName() + "\n";
-        result += "\t" + "Title" + "\t" + "\t" + "Days" + "\t" + "Amount" + "\n";
+        result += "\tTitle\t\tDays\tAmount\n";
 
         while (enum_rentals.hasMoreElements()) 
         {
