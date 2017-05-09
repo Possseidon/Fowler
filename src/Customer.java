@@ -1,7 +1,5 @@
 import java.util.*;
 
-import Movie.MovieType;
-
 class Customer 
 {
 	private String name;
